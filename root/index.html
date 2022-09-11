@@ -23,7 +23,7 @@
 <body>
     <header class="fe-header fe-row">
         <img class="fe-logo" src="./img/logo.svg" alt="Manage Logo" />
-        <nav class="fe-hide-mobile fe-header-nav" >
+        <nav class="fe-hide-mobile fe-header-nav">
             <ul class="fe-row-responsive ">
                 <li><a href="#" class="fe-header-nav-li">Pricing</a></li>
                 <li><a href="#" class="fe-header-nav-li">Product</a></li>
@@ -33,7 +33,7 @@
             </ul>
         </nav>
         <button class="fe-round-button fe-hide-mobile">Get Started</button>
-        <i class="fa-solid fa-burger fe-show-mobile"></i>
+        <i class="fa-solid fa-bars fe-show-mobile"></i>
     </header>
 
     <main class="fe-main fe-row-responsive fe-flex-row-direction-reverse-desktop">
@@ -42,7 +42,7 @@
         </div>
         <div class="fe-responsive-width-100-50 fe-column-responsive fe-column-responsive-vertical-center">
             <h1 class="fe-desk-text-left">Bring everyone together to build better products.</h1>
-            <p class="fe-desk-text-left">
+            <p class="fe-main-p fe-desk-text-left">
                 Manage makes it simple for software teams to plan day-to-day tasks
                 while keeping the large team goals in view
             </p>
@@ -50,42 +50,42 @@
         </div>
     </main>
 
-    <section class="fe-about-us fe-row-responsive fe-text-left">
+    <section class="fe-about-us fe-row-responsive">
         <div class="fe-responsive-width-100-50">
             <h3 class="fe-desk-text-left">What´s different about Manage?</h3>
-            <p class="fe-desk-text-left">
+            <p class="fe-about-us-p fe-desk-text-left">
                 Manage provides all the functionality your teas needs, without the
                 complexity. Our software is tailor-made for modern digital product
                 teams
             </p>
         </div>
-        <ul class="fe-responsive-width-100-50">
-            <li>
-                <h4>
-                    <span>01</span>
+        <ul class="fe-about-us-card-list fe-responsive-width-100-50">
+            <li class="fe-about-us-card">
+                <h4 class="fe-about-us-card-header">
+                    <span class="fe-about-us-card-pill">01</span>
                     Track company-wide progress
                 </h4>
-                <p>
+                <p class="fe-about-us-card-body fe-text-left">
                     See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone
                     level all the way done to the smallest of details. Never lose sight of the bigger picture again.
                 </p>
             </li>
-            <li>
-                <h4>
-                    <span>02</span>
+            <li class="fe-about-us-card">
+                <h4 class="fe-about-us-card-header">
+                    <span class="fe-about-us-card-pill">02</span>
                     Advance built-in reports
                 </h4>
-                <p>
+                <p class="fe-about-us-card-body fe-text-left">
                     Set internal delivery estimates and track progress toward company goals. Our customisable dashboard
                     helps you build out the reports you need to keep key stakeholders informed.
                 </p>
             </li>
-            <li>
-                <h4>
-                    <span>03</span>
+            <li class="fe-about-us-card">
+                <h4 class="fe-about-us-card-header">
+                    <span class="fe-about-us-card-pill">03</span>
                     Everything you need in one place
                 </h4>
-                <p>
+                <p class="fe-about-us-card-body fe-text-left">
                     Stop jumping from one service to another to communicate, store files, track tasks and share
                     documents. Manage offers an all-in-one team productivity solution.
                 </p>
@@ -94,13 +94,16 @@
     </section>
 
     <section class="fe-testimonials fe-column-absolute-center">
-        <h3>What they´ve said</h3>
+        <h3 class="fe-testimonials-title">What they´ve said</h3>
         <div class="fe-row-center-stretch">
             <article class="fe-testimonial-card fe-column-absolute-center">
-                <img src="./img/avatar-ali.png" alt="Ali Bravo avatar">
-                <h4>Ali Bravo</h4>
-                <p>“Manage has supercharged our team´s workflow. The ability to maintain visibility on larger milestones
-                    at all times keeps everyone motivated.”</p>
+                <img class="fe-testimonial-card-photo" src="./img/avatar-ali.png" alt="Ali Bravo avatar">
+                <div class="fe-testimonial-card-body">
+                    <h4>Ali Bravo</h4>
+                    <p>“Manage has supercharged our team´s workflow. The ability to maintain visibility on larger
+                        milestones
+                        at all times keeps everyone motivated.”</p>
+                </div>
             </article>
             <article class="fe-testimonial-card fe-column-absolute-center fe-testimonial-card-hide-mobile">
                 <img src="./img/avatar-anisha.png" alt="Anisha avatar">
@@ -118,7 +121,7 @@
         <button class="fe-round-button">Get Started</button>
     </section>
 
-    <section class="action fe-row-responsive fe-row-responsive-horizontal-center">
+    <section class="fe-action fe-row-responsive fe-row-responsive-horizontal-center">
         <h2>
             Simplify hoy your team
             words today.
@@ -146,7 +149,7 @@
                 </ul>
             </div>
             <div class="fe-column-space-between fe-flex-column-direction-reverse-desktop">
-                <div >
+                <div>
                     <i class="fa-brands fa-square-facebook"></i>
                     <i class="fa-brands fa-youtube"></i>
                     <i class="fa-brands fa-twitter"></i>
