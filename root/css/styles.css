@@ -7,13 +7,16 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+
+    border: 1px solid red;
+
 }
 
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
 }
 
 h1,
@@ -21,7 +24,6 @@ h2,
 h3,
 h4 {
     font-weight: 700;
-    text-align: center;
 }
 
 a {
@@ -32,15 +34,18 @@ li {
     list-style-type: none;
 }
 
-.tex-left {
+/*************** General distribution styles ***************/
+
+.fe-text-left {
     text-align: left;
 }
 
-
-/*************** General distribution styles ***************/
-
 .fe-full-width {
     width: 100%;
+}
+
+.fe-full-height {
+    height: 100%;
 }
 
 .fe-responsive-width-100-50 {
@@ -60,9 +65,14 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
-    /*borrar luego*/
-    background-color: yellow;
+.fe-column-space-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .fe-column-responsive {
@@ -70,7 +80,6 @@ li {
     flex-direction: column;
     align-items: center;
 
-    background-color: rgb(41, 200, 23);
 }
 
 .fe-row {
@@ -91,15 +100,17 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 2px solid greenyellow;
 }
 
 .fe-row-responsive-horizontal-center {
     align-items: center;
-    border: 2px solid rgb(47, 99, 255);
 }
 
 @media (min-width: 680px) {
+    .fe-desk-text-left {
+        text-align: left;
+    }
+
     .fe-responsive-width-100-50 {
         width: 50%;
     }
@@ -114,20 +125,26 @@ li {
 
     .fe-column-responsive {
         align-items: flex-start;
-    
-        background-color: rgb(41, 200, 23);
-    }    
+
+    }
 
     .fe-column-responsive-vertical-center {
         justify-content: center;
-    
-        background-color: rgb(41, 200, 23);
-    }    
+
+    }
 
     .fe-row-responsive {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .fe-flex-row-direction-reverse-desktop {
+        flex-direction: row-reverse;
+    }
+
+    .fe-flex-column-direction-reverse-desktop {
+        flex-direction: column-reverse;
     }
 
 }
@@ -162,9 +179,6 @@ li {
 /*************** Header ***************/
 .fe-header {
     margin: 77.13px 36px 2px;
-
-    /* eliminar luego */
-    border: 2px solid blue;
 }
 
 .fe-header-nav {
@@ -182,9 +196,6 @@ li {
     .fe-header {
         height: 174px;
         margin: 0 5%;
-
-        /* eliminar luego */
-        border: 2px solid blue;
     }
 }
 
@@ -193,8 +204,6 @@ li {
 .fe-main {
     margin: 0 5%;
 
-    /* eliminar luego */
-    background-color: red;
 }
 
 .fe-main-image-wrap {
@@ -204,16 +213,11 @@ li {
 .fe-main-image {
     width: 385.24px;
     height: 263.39px;
-
-    /* eliminar luego */
-    background-color: blue;
 }
 
 @media (min-width: 680px) {
 
-    .fe-main {
-        flex-direction: row-reverse;
-    }
+    .fe-main {}
 
     .fe-main-image-wrap {
         width: 50%;
@@ -222,9 +226,6 @@ li {
     .fe-main-image {
         width: 540px;
         height: 485.px;
-
-        /* eliminar luego */
-        background-color: green;    
     }
 }
 
@@ -238,13 +239,10 @@ li {
 
 /*************** Testimonials Section ***************/
 
-.fe-testimonials {
-}
+.fe-testimonials {}
 
 .fe-testimonial-card {
     width: 445px;
-    
-    border: 2px solid blue;
 }
 
 .fe-testimonial-card-hide-mobile {
