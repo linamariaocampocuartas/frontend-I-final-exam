@@ -32,9 +32,18 @@ li {
     list-style-type: none;
 }
 
+.tex-left {
+    text-align: left;
+}
+
+
 /*************** General distribution styles ***************/
 
 .fe-full-width {
+    width: 100%;
+}
+
+.fe-responsive-width-100-50 {
     width: 100%;
 }
 
@@ -44,6 +53,24 @@ li {
 
 .fe-show-mobile {
     display: block;
+}
+
+.fe-column-absolute-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /*borrar luego*/
+    background-color: yellow;
+}
+
+.fe-column-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(41, 200, 23);
 }
 
 .fe-row {
@@ -61,6 +88,10 @@ li {
 }
 
 @media (min-width: 680px) {
+    .fe-responsive-width-100-50 {
+        width: 50%;
+    }
+
     .fe-hide-mobile {
         display: block;
     }
@@ -68,7 +99,19 @@ li {
     .fe-show-mobile {
         display: none;
     }
+
+    .fe-column-responsive {
+        align-items: flex-start;
     
+        background-color: rgb(41, 200, 23);
+    }    
+
+    .fe-column-responsive-vertical-center {
+        justify-content: center;
+    
+        background-color: rgb(41, 200, 23);
+    }    
+
     .fe-row-responsive {
         display: flex;
         flex-direction: row;
@@ -111,7 +154,7 @@ li {
     border: 2px solid blue;
 }
 
-.fe-nav {
+.fe-header-nav {
     width: 55%;
 }
 
@@ -134,15 +177,61 @@ li {
 
 /*************** Main ***************/
 
+.fe-main {
+    margin: 0 5%;
+
+    /* eliminar luego */
+    background-color: red;
+}
+
+.fe-main-image-wrap {
+    width: 100%;
+}
+
+.fe-main-image {
+    width: 385.24px;
+    height: 263.39px;
+
+    /* eliminar luego */
+    background-color: blue;
+}
+
+@media (min-width: 680px) {
+
+    .fe-main {
+        flex-direction: row-reverse;
+    }
+
+    .fe-main-image-wrap {
+        width: 50%;
+    }
+
+    .fe-main-image {
+        width: 540px;
+        height: 485.px;
+
+        /* eliminar luego */
+        background-color: green;    
+    }
+}
+
+/*************** About Section ***************/
+
+.fe-about-us {
+    margin: 0 5%;
+}
+
+@media (min-width: 680px) {}
+
+/*************** Action Section ***************/
+
 .action {
     background-color: #8B48BF;
     color: #FFFFFF;
 }
 
 
-@media (min-width: 680px) {
-
-}
+@media (min-width: 680px) {}
 
 /*************** Footer ***************/
 
@@ -151,9 +240,4 @@ li {
     color: #FFFFFF;
 }
 
-@media (min-width: 680px) {
-
-}
-
-
-
+@media (min-width: 680px) {}
