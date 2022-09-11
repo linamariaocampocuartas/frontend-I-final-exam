@@ -3,10 +3,10 @@
 *,
 :after,
 :before {
+    border-style: none;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    border-style: none;
 }
 
 body {
@@ -32,70 +32,70 @@ li {
     list-style-type: none;
 }
 
-.fe-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+/*************** General distribution styles ***************/
 
-.fe-row-responsive {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    border: 2px solid greenyellow;
-}
-
-.fe-show-mobile {
-    display: block;
+.fe-full-width {
+    width: 100%;
 }
 
 .fe-hide-mobile {
     display: none;
 }
 
-.fe-logo {
-    width: 145.54px;
-    height: 23.74px;
+.fe-show-mobile {
+    display: block;
 }
 
-.fe-full-width {
-    width: 100%;
+.fe-row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fe-row-responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid greenyellow;
 }
 
 @media (min-width: 680px) {
-    .fe-row-responsive {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
+    .fe-hide-mobile {
+        display: block;
     }
 
     .fe-show-mobile {
         display: none;
     }
     
-    .fe-hide-mobile {
-        display: block;
+    .fe-row-responsive {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-    
+}
+
+/*************** Commun styles ***************/
+
+.fe-logo {
+    height: 23.74px;
+    width: 145.54px;
 }
 
 /*************** Buttons ***************/
 .fe-round-button {
-    padding: 10px;
-    width: 134px;
-    height: 44px;
     background-color: #8B48BF;
     border-radius: 50px;
+    height: 44px;
+    padding: 10px;
+    width: 134px;
 
-    font-family: inherit;
-    font-weight: inherit;
-    font-size: 0.8237875rem;
-    line-height: 1.1875rem;
-    
     color: #FFFFFF;
+    font-family: inherit;
+    line-height: 1.1875rem;
+    font-size: 0.8237875rem;
+    font-weight: inherit;
 }
 
 .fe-round-button-reverse {
@@ -107,7 +107,8 @@ li {
 .fe-header {
     margin: 77.13px 36px 2px;
 
-    border: 2px solid red;
+    /* eliminar luego */
+    border: 2px solid blue;
 }
 
 .fe-nav {
@@ -115,20 +116,20 @@ li {
 }
 
 .fe-header-nav-li {
-    margin: 5px;
     color: #242E52;
     font-size: 0.8125rem;
     line-height: 1.186875rem;
+    margin: 5px;
 }
-
 
 @media (min-width: 680px) {
     .fe-header {
         height: 174px;
         margin: 0 5%;
+
+        /* eliminar luego */
         border: 2px solid blue;
     }
-
 }
 
 /*************** Main ***************/
