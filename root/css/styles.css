@@ -80,11 +80,23 @@ li {
     justify-content: space-between;
 }
 
+.fe-row-center-stretch {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .fe-row-responsive {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid greenyellow;
+}
+
+.fe-row-responsive-horizontal-center {
+    align-items: center;
+    border: 2px solid rgb(47, 99, 255);
 }
 
 @media (min-width: 680px) {
@@ -117,6 +129,7 @@ li {
         flex-direction: row;
         justify-content: space-between;
     }
+
 }
 
 /*************** Commun styles ***************/
@@ -222,6 +235,27 @@ li {
 }
 
 @media (min-width: 680px) {}
+
+/*************** Testimonials Section ***************/
+
+.fe-testimonials {
+}
+
+.fe-testimonial-card {
+    width: 445px;
+    
+    border: 2px solid blue;
+}
+
+.fe-testimonial-card-hide-mobile {
+    display: none;
+}
+
+@media (min-width: 680px) {
+    .fe-testimonial-card-hide-mobile {
+        display: block;
+    }
+}
 
 /*************** Action Section ***************/
 
