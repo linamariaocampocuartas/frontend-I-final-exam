@@ -1,0 +1,158 @@
+/*************** General styles ***************/
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.fe-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fe-row-responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 2px solid greenyellow;
+}
+
+.fe-show-mobile {
+    display: block;
+}
+
+.fe-hide-mobile {
+    display: none;
+}
+
+.fe-logo {
+    width: 145.54px;
+    height: 23.74px;
+}
+
+.fe-full-width {
+    width: 100%;
+}
+
+@media (min-width: 680px) {
+    .fe-row-responsive {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .fe-show-mobile {
+        display: none;
+    }
+    
+    .fe-hide-mobile {
+        display: block;
+    }
+    
+}
+
+/*************** Buttons ***************/
+.fe-round-button {
+    padding: 10px;
+    width: 134px;
+    height: 44px;
+    background-color: #8B48BF;
+    border-radius: 50px;
+
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 0.8237875rem;
+    line-height: 1.1875rem;
+    
+    color: #FFFFFF;
+}
+
+.fe-round-button-reverse {
+    background-color: #FFFFFF;
+    color: #8B48BF;
+}
+
+/*************** Header ***************/
+.fe-header {
+    margin: 77.13px 36px 2px;
+
+    border: 2px solid red;
+}
+
+.fe-nav {
+    width: 55%;
+}
+
+.fe-header-nav-li {
+    margin: 5px;
+    color: #242E52;
+    font-size: 0.8125rem;
+    line-height: 1.186875rem;
+}
+
+
+@media (min-width: 680px) {
+    .fe-header {
+        height: 174px;
+        margin: 0 5%;
+        border: 2px solid blue;
+    }
+
+}
+
+/*************** Main ***************/
+
+.action {
+    background-color: #8B48BF;
+    color: #FFFFFF;
+}
+
+
+@media (min-width: 680px) {
+
+}
+
+/*************** Footer ***************/
+
+.footer {
+    background-color: #1E1E26;
+    color: #FFFFFF;
+}
+
+@media (min-width: 680px) {
+
+}
+
+
+
