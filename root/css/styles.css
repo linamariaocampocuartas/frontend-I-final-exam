@@ -8,7 +8,7 @@
     margin: 0px;
     padding: 0px;
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 body {
@@ -211,6 +211,12 @@ li {
     border-radius: 50px;
 }
 
+@media (min-width: 481px) {
+    .fe-round-input {
+        width: 201px;
+    }
+}
+
 /*************** Header ***************/
 .fe-header {
     margin: 40px 45px 2px;
@@ -396,7 +402,11 @@ li {
 }
 
 
-@media (min-width: 481px) {}
+@media (min-width: 481px) {
+    .fe-action {
+        padding: 40px 130px;
+    }    
+}
 
 /*************** Footer ***************/
 
@@ -436,7 +446,6 @@ li {
 
     height: 100%;
     width: 50%;
-
 }
 
 .fe-footer-link,
@@ -473,4 +482,47 @@ li {
     line-height: 1.14125rem;
 }
 
-@media (min-width: 481px) {}
+@media (min-width: 481px) {
+    .fe-footer {
+        height: 247px;
+    }    
+
+    .fe-footer-main {
+        height: 170px;
+        padding: 40px 130px 0;
+    }
+
+    .fe-footer-form {
+        height: 150px;
+        align-items: flex-start;
+    }    
+
+    .fe-footer-links {
+        height: auto;
+        width: 450px;
+        align-items: flex-start;
+    }
+    
+    .fe-footer-links-col {
+        height: auto;
+        padding: 5px 0 0 30px;
+    }
+
+    .fe-footer-brands {
+        height: 130px;
+        width: auto;
+        padding: 0;
+    }
+
+    .fe-footer-social-networks {
+        width: 152px;
+    }    
+
+    .fe-footer-bottom {
+        height: auto;
+        align-items: flex-end;
+        margin: 0 5%;
+        position: relative;
+        top: -15px;
+    }    
+}
