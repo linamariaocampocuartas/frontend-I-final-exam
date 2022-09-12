@@ -129,33 +129,34 @@
 
     <section class="fe-action fe-row-responsive fe-row-responsive-horizontal-center">
         <h2>
-            Simplify hoy your team
-            words today.
+            Simplify how <br> your team works today.
         </h2>
         <button class="fe-round-button fe-round-button-reverse">Get Started</button>
     </section>
 
-    <footer class="footer">
-        <div class="fe-row-responsive fe-row-responsive-horizontal-center fe-flex-row-direction-reverse-desktop">
-            <form action="apage.php" method="post">
-                <input type="email" name="email" id="email">
-                <button type="submit" class="fe-round-button">Go</button>
+    <footer class="fe-footer">
+        <div class="fe-footer-main fe-row-responsive fe-row-responsive-horizontal-center fe-flex-row-direction-reverse-desktop">
+            <form action="apage.php" method="post" class="fe-footer-form ">
+                <div class="fe-row-center-stretch">
+                    <input type="email" name="email" id="email" class="fe-round-input">
+                    <button type="submit" class="fe-round-button fe-footer-form-button">Go</button>
+                </div>
             </form>
-            <div class="fe-row-center-stretch">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">About Us</a></li>
+            <div class="fe-footer-links fe-row">
+                <ul class="fe-footer-links-col">
+                    <li><a class="fe-footer-link" href="#">Home</a></li>
+                    <li><a class="fe-footer-link" href="#">Pricing</a></li>
+                    <li><a class="fe-footer-link" href="#">Product</a></li>
+                    <li><a class="fe-footer-link" href="#">About Us</a></li>
                 </ul>
-                <ul>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                <ul class="fe-footer-links-col">
+                    <li><a class="fe-footer-link" href="#">Careers</a></li>
+                    <li><a class="fe-footer-link" href="#">Community</a></li>
+                    <li><a class="fe-footer-link" href="#">Privacy Policy</a></li>
                 </ul>
             </div>
-            <div class="fe-column-space-between fe-flex-column-direction-reverse-desktop">
-                <div>
+            <div class="fe-footer-brands fe-column-space-between fe-flex-column-direction-reverse-desktop">
+                <div class="fe-footer-social-networks">
                     <i class="fa-brands fa-square-facebook"></i>
                     <i class="fa-brands fa-youtube"></i>
                     <i class="fa-brands fa-twitter"></i>
@@ -165,7 +166,7 @@
                 <img src="./img/logo.svg" alt="Manage Logo" />
             </div>
         </div>
-        <div>
+        <div class="fe-footer-bottom fe-column-absolute-center">
             Copyright 2020. All Rights Reserved
         </div>
     </footer>
