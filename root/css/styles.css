@@ -8,7 +8,7 @@
     margin: 0px;
     padding: 0px;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -136,6 +136,11 @@ li {
         text-align: left;
     }
 
+    .fe-margin-left-20 {
+        margin: 0 10% 0 0;
+    }
+
+
     .fe-responsive-width-100-50 {
         width: 50%;
     }
@@ -212,6 +217,11 @@ li {
 }
 
 @media (min-width: 481px) {
+    .fe-round-button {
+        margin: 10px 0;
+        cursor: pointer;
+    }
+
     .fe-round-input {
         width: 201px;
     }
@@ -268,15 +278,22 @@ li {
 
 @media (min-width: 481px) {
 
-    .fe-main {}
+    .fe-main {
+        margin: 0 5%;
+    }
+
+    .fe-main-p {
+        margin: 0;
+    }
 
     .fe-main-image-wrap {
         width: 50%;
+        padding: 0;
     }
 
     .fe-main-image {
-        width: 540px;
-        height: 485.px;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -334,7 +351,29 @@ li {
 
 }
 
-@media (min-width: 481px) {}
+@media (min-width: 481px) {
+    .fe-about-us {
+        margin: 100px 5% 0px;
+    }
+
+    .fe-about-us-p {
+        margin: 0;
+    }
+
+    .fe-about-us-card-list {
+        align-items: flex-start;
+        margin: 0;
+    }    
+
+    .fe-about-us-card-header {
+        background: none;
+    }    
+
+    .fe-about-us-card-body {
+        padding: 30px 10px 10px 70px;
+    
+    }    
+}
 
 /*************** Testimonials Section ***************/
 
