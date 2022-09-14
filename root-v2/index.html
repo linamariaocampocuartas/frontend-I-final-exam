@@ -21,36 +21,36 @@
 </head>
 
 <body>
-    <header class="fe-header">
+    <header class="fe-header fe-container-flex">
         <img src="./img/logo.svg" alt="Manage Logo" />
-        <nav class="fe-menu">
+        <nav class="fe-menu fe-hide-small">
             <ul>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Product</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Community</a></li>
             </ul>
         </nav>
-        <button>Get Started</button>
+        <button class="fe-hide-small">Get Started</button>
         <i class="fa-solid fa-bars"></i>
     </header>
 
-    <main class="fe-main">
+    <main class="fe-main fe-container-flex">
         <div>
-            <img src="./img/ilustration-intro.svg" alt="Dashboard image" />
+            <img src="./img/ilustration-intro.svg" class="fe-dashboard" alt="Dashboard image" />
         </div>
-        <div>
+        <div >
             <h1>Bring everyone together to build better products.</h1>
             <p>
                 Manage makes it simple for software teams to plan day-to-day tasks
                 while keeping the large team goals in view
             </p>
-            <button>Get Started</button>
+            <button class="fe-button">Get Started</button>
         </div>
     </main>
 
-    <section class="fe-about-us">
+    <section id="about" class="fe-about-us fe-container-flex">
         <div>
             <h2>What´s different about Manage?</h2>
             <p>
@@ -93,7 +93,7 @@
         </ul>
     </section>
 
-    <section class="fe-testimonials">
+    <section class="fe-testimonials fe-container-flex">
         <h2>What they´ve said</h2>
         <div>
             <article>
@@ -124,46 +124,44 @@
             </article>
 
         </div>
-        <button>Get Started</button>
+        <button class="fe-button">Get Started</button>
     </section>
 
-    <section class="fe-action">
+    <section class="fe-action fe-container-flex">
         <h2>
             Simplify how <br> your team works today.
         </h2>
-        <button>Get Started</button>
+        <button class="fe-button fe-button-reverse">Get Started</button>
     </section>
 
-    <footer class="fe-footer">
-        <div>
+    <footer class="fe-footer fe-container-flex">
+        <div class="fe-container-flex fe-full-width">
             <form action="apage.php" method="post" >
-                <div>
-                    <input type="email" name="email" id="email">
-                    <button type="submit">Go</button>
+                <div class="form-row">
+                    <input type="email" name="email" id="email" class="fe-round-input">
+                    <button type="submit" class="fe-button">Go</button>
                 </div>
             </form>
             <div>
-                <ul>
+                <ul class="fe-container-flex fe-footer-ul">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Pricing</a></li>
                     <li><a href="#">Product</a></li>
                     <li><a href="#">About Us</a></li>
-                </ul>
-                <ul>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Community</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
             <div>
-                <div>
+                <div class="fe-container-flex fe-brands">
                     <i class="fa-brands fa-square-facebook"></i>
                     <i class="fa-brands fa-youtube"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-pinterest"></i>
                     <i class="fa-brands fa-instagram"></i>
                 </div>
-                <img src="./img/logo.svg" alt="Manage Logo" />
+                <img src="./img/logo.svg" alt="Manage Logo" class="fe-footer-img"/>
             </div>
         </div>
         <div>

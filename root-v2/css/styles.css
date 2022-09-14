@@ -1,6 +1,59 @@
+/************************************** TIPOGRAFIA **************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 /************************************** GENERAL SECTION **************************************/
 
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+html {
+    font-size: 16px;
+    color: #000000;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    color: #232851;
+}
+
+h1 {
+    font-size: 3.6rem;
+    letter-spacing: -0.25rem;
+    line-height: 4rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: #323851;
+    letter-spacing: -0.25px;
+}
+
+li {
+    list-style: none;
+    margin: 3px 0;
+}
+
+p {
+    font-weight: 500;
+    line-height: 1.75rem;
+}
 
 @media (min-width: 481px) {
 
@@ -8,13 +61,21 @@
 
 /************************************** SHARE SECTION **************************************/
 
-.fe-flex {
-
+.fe-container-flex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-li {
-
+.fe-hide-small {
+    display: none;
 }
+
+.fe-full-width {
+    width: 100%;
+}
+
 
 @media (min-width: 481px) {
 
@@ -22,8 +83,36 @@ li {
 
 /************************************** FORM SECTION **************************************/
 
-button {	
+.form-row {
+    padding: 20px;
+}
 
+.fe-button {
+    background-color: #8B48BF;
+    border-radius: 50px;
+    border-style: none;
+    height: 45px;
+    margin: 5px;
+    padding: 10px 20px;
+
+    color: #FFFFFF;
+    line-height: 1.2rem;
+    font-size: 0.85rem;
+    font-weight: inherit;
+}
+
+.fe-button-reverse {
+    background-color: #FFFFFF;
+    color: #8B48BF;
+}
+
+.fe-round-input {
+    padding: 10px;
+    height: 45px;
+    margin: 5px;
+
+    background: #FFFFFF;
+    border-radius: 50px;
 }
 
 @media (min-width: 481px) {
@@ -33,15 +122,17 @@ button {
 /************************************** HEADER SECTION **************************************/
 
 .fe-header {
-
-}
-
-.fe-header img {
-
+    height: 80px;
+    flex-direction: row;
+    align-items: flex-end;
 }
 
 .fe-menu {
+    font-size: 1.5rem;
+}
 
+.fa-bars {
+    font-size: 2rem;
 }
 
 
@@ -51,12 +142,14 @@ button {
 
 /************************************** MAIN SECTION **************************************/
 
-.fe-header {
-
+.fe-main {
+    margin: 0 5%;
 }
 
-.fe-header img {
-
+.fe-dashboard {
+    width: 380px;
+    height: 260px;
+    margin: 2rem 0;
 }
 
 @media (min-width: 481px) {
@@ -86,7 +179,7 @@ button {
 /************************************** ACTION SECTION **************************************/
 
 .fe-action {
-
+    background-color: #8B48BF;
 }
 
 @media (min-width: 481px) {
@@ -96,7 +189,27 @@ button {
 /************************************** FOOTER SECTION **************************************/
 
 .fe-footer {
+    background-color: #1E1E26;
+    color: #FFFFFF;
+}
 
+.fe-footer-ul {
+    width: 90vw;
+    height: 120px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: flex-start;
+}
+
+.fe-brands {
+    flex-direction: row;
+    width: 90vw;
+    justify-content: space-between;
+}
+
+.fe-footer-img {
+    margin: 20px 0;
 }
 
 @media (min-width: 481px) {
