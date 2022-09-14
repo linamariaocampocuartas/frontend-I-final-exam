@@ -11,6 +11,7 @@
 
 html {
     font-size: 16px;
+    width: 400;
     color: #000000;
 }
 
@@ -83,10 +84,6 @@ p {
 
 /************************************** FORM SECTION **************************************/
 
-.form-row {
-    padding: 20px;
-}
-
 .fe-button {
     background-color: #8B48BF;
     border-radius: 50px;
@@ -94,6 +91,7 @@ p {
     height: 45px;
     margin: 5px;
     padding: 10px 20px;
+    min-width: 65px;
 
     color: #FFFFFF;
     line-height: 1.2rem;
@@ -104,6 +102,10 @@ p {
 .fe-button-reverse {
     background-color: #FFFFFF;
     color: #8B48BF;
+}
+
+.form-row {
+    padding: 10px;
 }
 
 .fe-round-input {
@@ -162,6 +164,36 @@ p {
 
 }
 
+.fe-about-us h3{
+    background: rgba(139, 72, 191, 0.3);
+    border-radius: 50px 0px 0px 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 43px;
+}
+
+.fe-pill {
+    background: #8B48BF;
+    border-radius: 30px;
+
+    height: 43px;
+    margin: 0 10px 0 0;
+    padding: 10px 25px;
+}
+
+li p {
+    text-align: left;
+    padding: 5px 20px;
+    color: #B3B2B7;
+
+    line-height: 1.5rem;
+    letter-spacing: -0.01rem;
+}
+
+
 @media (min-width: 481px) {
 
 }
@@ -180,7 +212,13 @@ p {
 
 .fe-action {
     background-color: #8B48BF;
+    padding: 5vw;
 }
+
+.fe-action h2{
+    color: #FFFFFF;
+}
+
 
 @media (min-width: 481px) {
 
@@ -193,7 +231,16 @@ p {
     color: #FFFFFF;
 }
 
-.fe-footer-ul {
+.fe-footer input{
+    width: 60vw;
+}
+
+.fe-footer a {
+    color: #FFFFFF;
+    line-height: 1.5rem;
+}
+
+.fe-footer ul {
     width: 90vw;
     height: 120px;
     flex-wrap: wrap;
@@ -204,12 +251,21 @@ p {
 
 .fe-brands {
     flex-direction: row;
-    width: 90vw;
+    width: 80vw;
     justify-content: space-between;
+    font-size: 1.25rem;
+    margin: 20px 0;
 }
 
 .fe-footer-img {
     margin: 20px 0;
+}
+
+.fe-footer-bottom {
+    font-weight: 500;
+    color: #8C8C94;
+    font-size: 0.8rem;
+    padding: 20px 0 40px;
 }
 
 @media (min-width: 481px) {
