@@ -57,7 +57,12 @@ p {
 }
 
 @media (min-width: 481px) {
-
+    h1,
+    .fe-main h2,
+    .fe-about-text h2,
+    .fe-about-text p {
+        text-align: left;
+    }
 }
 
 /************************************** SHARE SECTION **************************************/
@@ -73,13 +78,19 @@ p {
     display: none;
 }
 
+.fe-hide-big {
+    display: none;
+}
+
 .fe-full-width {
     width: 100%;
 }
 
 
 @media (min-width: 481px) {
-
+    .fe-hide-small {
+        display: block;
+    }
 }
 
 /************************************** FORM SECTION **************************************/
@@ -92,6 +103,7 @@ p {
     margin: 5px;
     padding: 10px 20px;
     min-width: 65px;
+    cursor: pointer;
 
     color: #FFFFFF;
     line-height: 1.2rem;
@@ -129,17 +141,36 @@ p {
     align-items: flex-end;
 }
 
-.fe-menu {
-    font-size: 1.5rem;
-}
-
 .fa-bars {
     font-size: 2rem;
+    cursor: pointer;
 }
 
 
 @media (min-width: 481px) {
+    .fe-header {
+        height: 200px;
+        justify-content: space-between;
+        margin: 0 5%;
+        align-items: center;
+    }
 
+    .fe-menu {
+        width: 45%;
+        flex-direction: row;
+        font-size: 0.8rem;
+    }
+    
+    .fe-menu ul {
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .fe-menu li {
+        padding: 5px ;
+    }
+        
 }
 
 /************************************** MAIN SECTION **************************************/
@@ -155,7 +186,13 @@ p {
 }
 
 @media (min-width: 481px) {
+    .fe-main {
+        flex-direction: row-reverse;
+    }
 
+    .fe-main div {
+        width: 50%;
+    }
 }
 
 /************************************** ABOUT US SECTION **************************************/
@@ -195,17 +232,47 @@ li p {
 
 
 @media (min-width: 481px) {
+    .fe-about-us {
+        flex-direction: row;
+        margin: 0 5%; 
+        align-items: flex-start;
+    }
 
 }
 
 /************************************** TESTIMONIALS SECTION **************************************/
 
 .fe-testimonials {
+    margin: 0 5%;
+}
+
+article {
+    margin: 40px 0 10px;
+    padding: 35px 5% 3%;
+    position: relative;
+    justify-content: flex-start;
+    max-width: 445px;
 
 }
 
-@media (min-width: 481px) {
+article img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -35px;
+}
 
+@media (min-width: 481px) {
+    .fe-testimonials {
+        margin: 50px 5%;
+    }
+
+    .fe-people {
+        flex-direction: row;
+        justify-content: center;
+        margin: 50px 0;
+        
+    }
 }
 
 /************************************** ACTION SECTION **************************************/
@@ -221,7 +288,15 @@ li p {
 
 
 @media (min-width: 481px) {
+    .fe-action {
+        height: 140px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    .fe-action h2{
+        text-align: left;
+    }
 }
 
 /************************************** FOOTER SECTION **************************************/
@@ -241,15 +316,16 @@ li p {
 }
 
 .fe-footer ul {
-    width: 90vw;
-    height: 120px;
+    min-width: 320px;
+    height: 140px;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: space-around;
     align-items: flex-start;
+    padding: 0;
 }
 
-.fe-brands {
+.fe-social {
     flex-direction: row;
     width: 80vw;
     justify-content: space-between;
@@ -269,6 +345,27 @@ li p {
 }
 
 @media (min-width: 481px) {
+    .fe-footer-top {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+
+    .fe-brands {
+        flex-direction: row-reverse;
+    }
+
+    .fe-social {
+        width: auto;
+        justify-content: space-between;
+    }
+
+    .fe-footer ul {
+        width: auto;
+    }
+
+    .fe-footer input{
+        width: auto;
+    }
 
 }
 

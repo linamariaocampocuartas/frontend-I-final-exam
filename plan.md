@@ -19,7 +19,7 @@ Desktop
 
 ### estilos comunes
 :) titulos
-- parrafos
+:) parrafos
 
 ### header
 
@@ -33,11 +33,9 @@ Desktop
 
 ### footer
 
-- Color de fondo
+:) Color de fondo
 - Agregar justificación de texto
-- Estilizar botones
-
-
+:) Estilizar botones
 
 
 ## Animaciones
