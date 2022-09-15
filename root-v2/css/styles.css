@@ -59,6 +59,7 @@ p {
 @media (min-width: 481px) {
     h1,
     .fe-main h2,
+    .fe-main-text p,
     .fe-about-text h2,
     .fe-about-text p {
         text-align: left;
@@ -78,10 +79,6 @@ p {
     display: none;
 }
 
-.fe-hide-big {
-    display: none;
-}
-
 .fe-full-width {
     width: 100%;
 }
@@ -90,7 +87,11 @@ p {
 @media (min-width: 481px) {
     .fe-hide-small {
         display: block;
-    }
+    } 
+
+    .fe-hide-big {
+        display: none;
+    }    
 }
 
 /************************************** FORM SECTION **************************************/
@@ -149,7 +150,7 @@ p {
 
 @media (min-width: 481px) {
     .fe-header {
-        height: 200px;
+        height: 100px;
         justify-content: space-between;
         margin: 0 5%;
         align-items: center;
@@ -193,6 +194,17 @@ p {
     .fe-main div {
         width: 50%;
     }
+
+    .fe-main-text {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .fe-main img{
+        width: 580px;
+        height: 525px;
+    }
+    
 }
 
 /************************************** ABOUT US SECTION **************************************/
@@ -238,6 +250,22 @@ li p {
         align-items: flex-start;
     }
 
+    .fe-about-text {
+        width: 50%;
+    }
+
+    .fe-about-us ul {
+        width: 50%;
+    }
+
+    .fe-about-us h3{
+        background-color: transparent;
+    }
+
+    li p {
+        padding: 0 90px ;
+    }
+
 }
 
 /************************************** TESTIMONIALS SECTION **************************************/
@@ -246,13 +274,14 @@ li p {
     margin: 0 5%;
 }
 
-article {
+article.fe-container-flex{
     margin: 40px 0 10px;
     padding: 35px 5% 3%;
     position: relative;
     justify-content: flex-start;
     max-width: 445px;
-
+    background-color: #FAFAFA;
+    align-self: stretch;
 }
 
 article img {
