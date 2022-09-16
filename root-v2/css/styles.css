@@ -79,11 +79,6 @@ p {
     display: none;
 }
 
-.fe-full-width {
-    width: 100%;
-}
-
-
 @media (min-width: 481px) {
     .fe-hide-small {
         display: inherit;
@@ -128,6 +123,11 @@ p {
 
     background: #FFFFFF;
     border-radius: 50px;
+}
+
+.fe-header .fe-button,
+.fe-testimonials .fe-button {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: 481px) {
@@ -275,7 +275,7 @@ li p {
 /************************************** TESTIMONIALS SECTION **************************************/
 
 .fe-testimonials {
-    margin: 0 5%;
+    margin: 50px 5%;
 }
 
 article.fe-container-flex{
@@ -312,7 +312,7 @@ article img {
 
 .fe-action {
     background-color: #8B48BF;
-    padding: 5vw;
+    padding: 5%;
 }
 
 .fe-action h2{
@@ -337,6 +337,10 @@ article img {
 .fe-footer {
     background-color: #1E1E26;
     color: #FFFFFF;
+}
+
+.fe-footer-top {
+    width: 100%;
 }
 
 .fe-footer input{
@@ -381,6 +385,8 @@ article img {
     .fe-footer-top {
         flex-direction: row-reverse;
         align-items: flex-start;
+        justify-content: space-between;
+        padding: 10px 5%;
     }
 
     .fe-brands {
