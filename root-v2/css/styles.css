@@ -213,10 +213,6 @@ p {
 
 /************************************** ABOUT US SECTION **************************************/
 
-.fe-about-us {
-
-}
-
 .fe-about-us h3{
     align-items: center;
     background: rgba(139, 72, 191, 0.3);
@@ -414,9 +410,26 @@ article img {
 
 }
 
-/************************************** **************************************/
+/************************************** ANIMACIONES **************************************/
 
-
-@media (min-width: 481px) {
-
+.fe-button {
+    transition: all 0.5s linear;
 }
+
+.fe-button:hover {
+    transform: translateY(-3px);
+}
+
+/************************************** KEYFRAMES **************************************/
+
+article {
+    animation: ani-show 3s linear;
+}
+
+
+@keyframes ani-show {
+    from{opacity: 10%;}
+    to{opacity: 100%;}
+}
+
+
